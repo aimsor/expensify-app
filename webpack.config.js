@@ -20,7 +20,6 @@ module.exports = (env) => {
       }, {
         test: /\.s?css$/,
         use: CSSExtract.extract({
-          fallback: 'style-loader',
           use: [
             {
               loader: 'css-loader',
